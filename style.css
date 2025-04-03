@@ -39,12 +39,12 @@ header {
 }
 header h1 {
     font-size: 3.5rem;
-    color: #2d3748;
+    color: #00CSD1;
     margin-bottom: 1rem;
 }
 header p {
     font-size: 1.25rem;
-    color: #4a5568;
+    color: #00CSD1;
 }
 .popup {
     position: fixed;
@@ -298,7 +298,7 @@ body {
     }
 
     header p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 }
 /* Popup Background */
