@@ -3,22 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: #f8f9fa;
     color: #89076fe8;
     line-height: 1.6;
 }
-
-/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
-
-/* Header */
 header {
     display: flex; /* Enables flexbox */
     align-items: center; /* Aligns items vertically */
@@ -27,11 +22,7 @@ header {
     font-family: 'Bebas Neue', sans-serif;
     padding: 10px 20px;
     position: relative; /* Allows absolute positioning for the logo */
-    /*background-color: #ddd;
-    border-radius: 30PX;
-    opacity: 0.7;*/
 }
-
 .header-logo {
     width: 100px; /* Adjust size as needed */
     height: 70px;
@@ -40,26 +31,21 @@ header {
     top: 50%; /* Aligns vertically */
     transform: translateY(-50%); /* Adjusts alignment */
 }
-
 .header-content {
     display: flex;
     flex-direction: column; /* Stacks the text */
     align-items: center; /* Ensures text remains centered */
     text-align: center; /* Centers the text inside the container */
 }
-
 header h1 {
     font-size: 3.5rem;
     color: #2d3748;
     margin-bottom: 1rem;
 }
-
 header p {
     font-size: 1.25rem;
     color: #4a5568;
 }
-
-/* Popup */
 .popup {
     position: fixed;
     top: 0;
@@ -72,7 +58,6 @@ header p {
     align-items: center;
     z-index: 1000;
 }
-
 .popup-content {
     position: relative;
     max-width: 90%;
@@ -85,8 +70,6 @@ header p {
     box-shadow: 0 25px 50px -12px rgba(131, 4, 91, 0.896);
     padding: 2rem;
 }
-
-/* Close Button */
 .close-button {
     position: absolute;
     top: 1rem;
@@ -104,20 +87,15 @@ header p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
 }
-
 .close-button:hover {
     background-color: #f3f4f6;
 }
-
-/* Events Grid */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 1rem;
 }
-
-/* Event Cards */
 .event-card {
     background: white;
     border-radius: 12px;
@@ -125,34 +103,28 @@ header p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-
 .event-card:hover {
     transform: translateY(-5px);
 }
-
 .event-card img {
     width: 100%;
     height: auto;
     object-fit: cover;
     
 }
-
 .event-content {
     padding: 1.5rem;
 }
-
 .event-content h3 {
     font-size: 1.25rem;
     color: #2d3748;
     margin-bottom: 0.75rem;
 }
-
 .event-content p {
     color: #4a5568;
     margin-bottom: 1.5rem;
     min-height: 4.8em;
 }
-
 .view-details-button {
     background-color: #4f46e5;
     color: white;
@@ -165,12 +137,9 @@ header p {
     width: 100%;
     text-align: center;
 }
-
 .view-details-button:hover {
     background-color: #4338ca;
 }
-
-/* Footer Styles */
 footer {
     background-color: #2d3748;
     color: white;
@@ -178,51 +147,41 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
-
 .footer-content p {
     margin: 0.5rem 0;
 }
-
 .footer-content a {
     color: #4f46e5;
     text-decoration: none;
 }
-
 .footer-content a:hover {
     text-decoration: underline;
 }
-
-/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
 }
-
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
-
 th {
     background-color: #f2f2f2;
 }
-
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     
 }
-
 .event-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     opacity: 0.95;
 }
-
 .popup {
     display: none; /* Initially hidden */
     position: fixed;
@@ -235,7 +194,6 @@ th {
     align-items: center;
     overflow: auto; /* Enables scrolling */
 }
-
 .popup-content {
     background: #fff;
     width: 80%;
@@ -246,14 +204,11 @@ th {
     border-radius: 10px;
     text-align: justify;
 }
-
-
 footer {
     background: #222;
     color: white;
     padding: 20px 0;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -263,53 +218,43 @@ footer {
     margin: auto;
     padding: 0 20px;
 }
-
 /* Left Section: Address & Logo */
 .footer-left {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
 .footer-logo {
     width: 80px; /* Adjust as needed */
     height: auto;
 }
-
 .footer-address p {
     margin: 5px 0;
     text-align: left;
 }
-
 .footer-address a {
     color: #FFD700; /* Gold color for links */
     text-decoration: none;
 }
-
 .footer-address a:hover {
     text-decoration: underline;
 }
-
 /* Right Section: Social Media */
 .footer-right {
     text-align: center;
 }
-
 .social-icons {
     margin-top: 10px;
 }
-
 .social-icons img {
     width: 30px;
     height: 30px;
     margin: 0 10px;
     transition: transform 0.3s;
 }
-
 .social-icons img:hover {
     transform: scale(1.2);
 }
-
 body {
     background-image: url('abc.jpg');
     background-size: 100vw 100vh; /* Forces image to stretch across full width & height */
@@ -321,35 +266,28 @@ body {
     width: 100vw; /* Ensures full screen width */
     height: 100vh; /* Ensures full screen height */
 }
-
-
 @media (max-width: 768px) {
     .header-container {
         flex-direction: row; /* Keeps logo on the left */
         align-items: center;
     }
-
     .header-logo {
         width: 50px;
         height: 40px;
         margin-right: 15px;
     }
-
     .header-content {
         text-align: center;
         flex-grow: 1;
     }
-
     header h1 {
         font-size: 2.5rem;
     }
-
     header p {
         font-size: 1rem;
         font-weight: bold;
     }
 }
-
 @media (max-width: 480px) {
     .header-logo {
         width: 60px;
@@ -375,8 +313,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* Popup Box */
 .popup-content1 {
     background: white;
     padding: 20px;
@@ -386,8 +322,6 @@ body {
     max-width: 400px;
     position: relative;
 }
-
-/* Close Button */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -395,53 +329,85 @@ body {
     font-size: 24px;
     cursor: pointer;
 }
-
-/* Image */
 .popup-image {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
-
-/* Button */
-.popup-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #ff5722;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
-
-.popup-button:hover {
-    background: #e64a19;
-}
-/* Button Container (Fixes at Bottom) */
-.register-container {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    z-index: 1000;
-}
-
-/* Register Button */
-.register-button {
-    background: #ec0593;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
+.toggle-btn {
+    padding: 12px 20px;
     font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
     font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease;
+}
+.toggle-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+.responsive-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(248, 245, 245, 0.2);
+    font-weight: bold;
+    z-index: 10;
 }
 
-/* Hover Effect */
-.register-button:hover {
-    background: #5d01fc;
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .toggle-btn {
+        width: 80%;
+        text-align: center;
+    }
+    .image-container {
+        max-width: 90%;
+    }
+    .responsive-image {
+        max-width: 100%;
+    }
+    .close-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 16px;
+    }
 }
