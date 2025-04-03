@@ -12,25 +12,10 @@
     <div id="popup" class="popup">
         <div class="popup-content1">
             <span class="close-btn" onclick="closePopup1()">&times;</span>
-            <img src="Seacond.jpg" alt="MAIN POSTER" class="popup-image">
+            <img src="MAIN POSTER.jpeg" alt="MAIN POSTER" class="popup-image">
            
         </div>
     </div> 
-    
-    <script>
-        let currentImage = 1;
-        function toggleImage() {
-            const imgElement = document.getElementById("popupImage");
-            if (currentImage === 1) {
-                imgElement.src = "Seacond.jpg";
-                currentImage = 2;
-            } else {
-                imgElement.src = "MAIN POSTER.jpeg";
-                currentImage = 1;
-            }
-        }
-    </script>
-
     <div class="container">
         <header>
             <img src="eve-logo.jpeg" alt="Stellar Logo" class="header-logo">
@@ -39,8 +24,16 @@
                 <p>A National Level Intercollegiate English Fest</p>
             </div>
         </header>
+        <div class="button-container">
+            <button class="toggle-btn" onclick="showImage('inst.jpg')">Institutional Profile</button>
+            <button class="toggle-btn" onclick="showImage('dept.jpg')">Department Overview</button>
+            <button class="toggle-btn" onclick="showImage('Seacond.jpg')">Stellar'25-Event Guidelines</button>
+        </div>
         
-
+        <div class="image-container" id="imageWrapper" style="display: none; position: relative;">
+            <span class="close-btn" onclick="closeImage()">&times;</span>
+            <img id="displayImage" src="" alt="" style="width: 100%; max-width: 400px; margin-top: 20px; border-radius: 8px;">
+        </div>
         <div class="events-grid">
             <div class="event-card">
                 <img src="AD MAD SHOW.jpg" 
@@ -646,6 +639,18 @@
 
     
 </body>
+<script>
+    function showImage(imageSrc) {
+        let img = document.getElementById("displayImage");
+        let wrapper = document.getElementById("imageWrapper");
+        img.src = imageSrc;
+        wrapper.style.display = "flex";
+    }
+    
+    function closeImage() {
+        document.getElementById("imageWrapper").style.display = "none";
+    }
+</script>
 <script>
     function closePopup(popupId) {
         document.getElementById(popupId).style.display = 'none';
