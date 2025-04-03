@@ -45,6 +45,8 @@ header h1 {
 header p {
     font-size: 1.25rem;
     color: #00CSD1;
+    font-family: "Times New Roman", Times, serif;
+
 }
 .popup {
     position: fixed;
